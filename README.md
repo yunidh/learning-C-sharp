@@ -44,7 +44,7 @@
 
 3. Variables (Implicitly typed)
 
-- `var` keyword can to implicitly declare a variable based on datatype
+- `var` keyword to implicitly declare a variable based on infered datatype
 - must be initialized, eg:
   - `var message;` will give error (must be initialized)
   - `var message = "hi!"` will work
