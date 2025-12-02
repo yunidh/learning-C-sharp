@@ -60,4 +60,4 @@
 
 - compound assignment operators like +=, -=, \*=, ++, and -- to perform a mathematical operation like increment or decrement, then assign the result into the original variable
 - Increment / decrement (++/--), depending on their position, perform their operation before or after they retrieve their value
-- By default, `float` values are _rounded down_ (1/2 = 0);
+- By default, `float` values are truncated(_rounded down_) when cast to int (1/2 = 0.5 = (int)0);
