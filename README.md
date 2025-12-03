@@ -25,12 +25,12 @@
 
 ## Concepts
 
-1. Printing:
+### 1. Printing:
 
 - `Console.Write` to print without newline
 - `Console.WriteLine` to append newline after output
 
-2. Literals (Hard coded data types):
+### 2. Literals (Hard coded data types):
 
 - `char`: ' ' single quote, 1 character
 - `string`: " " double quote, multiple characters
@@ -42,22 +42,44 @@
     - decimal ~28-29 digits (_use m/M literal suffix_)
 - `bool`: boolean value, True or False
 
-3. Implicitly typed Variable
+### 3. Implicitly typed Variable
 
 - `var` keyword to implicitly declare a variable based on infered datatype
 - must be initialized, eg:
   - `var message;` will give error (must be initialized)
   - `var message = "hi!"` will work
 
-4. String Manipulation
+### 4. String Manipulation
 
 - `@" "`, Verbatim string (next lines, whitespace, and sequences (escape '\s') etc. are printed, verbatim)
 - `\u`, Unicode escape sequence (next 4 characters are processed as UTF-16 unicode)
 - `$"Text and {code}"`,String interpolation, (can be combined with @)
 - `\r`, Carriage return, moves the cursor to the beginning of the current line without advancing to the next line
+- `string.Contains("...")`, checks for patterns in string, returns `true` or `false`
 
-5. Numbers
+### 5. Numbers
 
 - compound assignment operators like +=, -=, \*=, ++, and -- to perform a mathematical operation like increment or decrement, then assign the result into the original variable
 - Increment / decrement (++/--), depending on their position, perform their operation before or after they retrieve their value
 - By default, `float` values are truncated(_rounded down_) when cast to int (1/2 = 0.5 = (int)0);
+
+### 6. .NET Class Library
+
+- Stateful methods: Must create an instance of the class(object) before being called,
+  - Initialize an object: `<className> variableName = new()`
+- Stateless methods: Can be called without creating an object, eg: `Console.WriteLine(), Math.Max()`
+
+### 7. Booleans
+
+- && : AND, || : OR, == : equality, != inequality,
+
+### 8. Arrays
+
+- Ways to declare an array:
+  - `<datatype>[] variable = {...}`, eg: `int[] numbers = {1,2,3}`
+  - `<datatype>[] variable = new <datatype>[n] {...}`, where n = size of array
+  - `var variable = new[]{...} OR new[n]`, implicit declaration
+  - C#12 and onwards: `<datatype>[] variable = [...]`\*\*
+- Properties of array:
+  - array.Length (number of elements)
+- Iterate over array with `foreach(<datatype> variableForCurrentValue in iterable ){}`
