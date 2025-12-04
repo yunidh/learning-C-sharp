@@ -25,6 +25,10 @@
 
 ## Concepts
 
+### 0. Misc.
+
+- `??` Null Coalescing operator, `value/expression1 ?? value/expression2`, where if 1 is null then 2 is used
+
 ### 1. Printing:
 
 - `Console.Write` to print without newline
@@ -63,7 +67,7 @@
 - Increment / decrement (++/--), depending on their position, perform their operation before or after they retrieve their value
 - By default, `float` values are truncated(_rounded down_) when cast to int (1/2 = 0.5 = (int)0);
 
-### 6. .NET Class Library
+### 6. .NET Class Library (useful methods)
 
 - Stateful methods: Must create an instance of the class(object) before being called,
   - Initialize an object: `<className> variableName = new()`
@@ -83,3 +87,27 @@
 - Properties of array:
   - array.Length (number of elements)
 - Iterate over array with `foreach(<datatype> variableForCurrentValue in iterable ){}`
+
+### 10. Switch-case
+
+- `switch expressions`, for better readability and shorter code when only evaluating single expression for return value
+
+```
+variable = expression/valueToEvaluate switch
+    {
+      x or y or z => return value,
+      a=> "...",
+      b=> "...",
+      _ => "...", (default)
+    };
+```
+
+### 11. System namespace
+
+- `int.TryParse(someString, out intValue)`, returns a `bool`, which can be useful for conditional expressions like:
+
+  - _if (int.TryParse(someString, out int theInt)) { //use theInt here... }_,
+
+- `Array.ForEach(array, methodToApply)`, eg: (array,Console.WriteLine) will apply WriteLine to each element
+
+- `String.Split()`,
