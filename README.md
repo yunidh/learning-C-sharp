@@ -110,4 +110,4 @@ variable = expression/valueToEvaluate switch
 
 - `Array.ForEach(array, methodToApply)`, eg: (array,Console.WriteLine) will apply WriteLine to each element
 
-- `String.Split()`,
+- `String.Split(character)`, splits string at character and returns array

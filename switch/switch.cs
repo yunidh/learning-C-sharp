@@ -50,7 +50,7 @@ string sku = "01-MN-L";
 
 // string sku = "bleh-bleh-s";
 
-string[] product = sku.Split('-');
+string product = sku.Split('-');
 Array.ForEach(product, Console.WriteLine);
 string type = product[0] switch
 {
