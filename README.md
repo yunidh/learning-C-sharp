@@ -28,6 +28,8 @@
 ### 0. Misc.
 
 - `??` Null Coalescing operator, `value/expression1 ?? value/expression2`, where if 1 is null then 2 is used
+- `?` Nullable Value Type Operator, to declare a value type as nullable. eg: `int?` declares an integer that can hold either an int or null
+- `[start(inclusive)..end(exclusive)]` Range operator, for strings or arrays to signify a range, can use `^` with start/end index to count from last element
 
 ### 1. Printing:
 
@@ -80,13 +82,19 @@
 ### 8. Arrays
 
 - Ways to declare an array:
+
   - `<datatype>[] variable = {...}`, eg: `int[] numbers = {1,2,3}`
-  - `<datatype>[] variable = new <datatype>[n] {...}`, where n = size of array
+  - `<datatype>[] variable = new <datatype>[n] {...}`, where n = size of array, and able to declare array without initializing values
   - `var variable = new[]{...} OR new[n]`, implicit declaration
-  - C#12 and onwards: `<datatype>[] variable = [...]`\*\*
-- Properties of array:
-  - array.Length (number of elements)
+  - **C#12 and onwards:(collection expression)** `<datatype>[] variable = [...]`\*\*
+  - `<datatype>[,] OR [][]` Multi-dimensional array
+    - eg: `int[,]//int[][]/var numbers = [[...],[...]]OR new int[x,y]`
+
 - Iterate over array with `foreach(<datatype> variableForCurrentValue in iterable ){}`
+
+#### Properties of array:
+
+- array.Length (number of elements)
 
 ### 10. Switch-case
 
@@ -111,3 +119,5 @@ variable = expression/valueToEvaluate switch
 - `Array.ForEach(array, methodToApply)`, eg: (array,Console.WriteLine) will apply WriteLine to each element
 
 - `String.Split(character)`, splits string at character and returns array
+
+- `String.IsNullOrEmpty(string)`, returns bool true or false
