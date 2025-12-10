@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "forloop", "forloop\forloop.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "animals", "animals\animals.csproj", "{9241C12A-23D4-426C-8E5A-2AB491ADFE4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "convertData", "convertData\convertData.csproj", "{403B33C5-33AC-4662-A9C6-3FE8B53638DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "top-level-statements", "top-level-statements\top-level-statements.csproj", "{FD33CC16-2470-4012-9004-8805B842BA4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +171,30 @@ Global
 		{9241C12A-23D4-426C-8E5A-2AB491ADFE4F}.Release|x64.Build.0 = Release|Any CPU
 		{9241C12A-23D4-426C-8E5A-2AB491ADFE4F}.Release|x86.ActiveCfg = Release|Any CPU
 		{9241C12A-23D4-426C-8E5A-2AB491ADFE4F}.Release|x86.Build.0 = Release|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Debug|x64.Build.0 = Debug|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Debug|x86.Build.0 = Debug|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Release|x64.ActiveCfg = Release|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Release|x64.Build.0 = Release|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{403B33C5-33AC-4662-A9C6-3FE8B53638DF}.Release|x86.Build.0 = Release|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Debug|x64.Build.0 = Debug|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Debug|x86.Build.0 = Debug|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Release|x64.ActiveCfg = Release|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Release|x64.Build.0 = Release|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Release|x86.ActiveCfg = Release|Any CPU
+		{FD33CC16-2470-4012-9004-8805B842BA4B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

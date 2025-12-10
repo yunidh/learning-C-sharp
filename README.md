@@ -88,13 +88,12 @@
   - `var variable = new[]{...} OR new[n]`, implicit declaration
   - **C#12 and onwards:(collection expression)** `<datatype>[] variable = [...]`\*\*
   - `<datatype>[,] OR [][]` Multi-dimensional array
-    - eg: `int[,]//int[][]/var numbers = [[...],[...]]OR new int[x,y]`
+    - eg: `int[,]/int[][]/var numbers = [[...],[...]]OR new int[x,y]`
 
 - Iterate over array with `foreach(<datatype> variableForCurrentValue in iterable ){}`
 
-#### Properties of array:
-
-- array.Length (number of elements)
+- **Properties of array:**
+  - array.Length (number of elements)
 
 ### 10. Switch-case
 
@@ -112,12 +111,28 @@ variable = expression/valueToEvaluate switch
 
 ### 11. System namespace
 
-- `int.TryParse(someString, out intValue)`, returns a `bool`, which can be useful for conditional expressions like:
-
-  - _if (int.TryParse(someString, out int theInt)) { //use theInt here... }_,
-
 - `Array.ForEach(array, methodToApply)`, eg: (array,Console.WriteLine) will apply WriteLine to each element
 
 - `String.Split(character)`, splits string at character and returns array
 
 - `String.IsNullOrEmpty(string)`, returns bool true or false
+
+- `new Random()` creates the random generator object, `Random.Next()` method returns random int
+
+### 12. Converting datatypes
+
+- `Console.ReadLine()` returns a string, so we have to use conversion methods to change datatype
+- `Convert.To<datatype>()` converts to specified datatype, eg: `Convert.ToInt32(string)`
+- `.ToString()` every object in Csharp can be converted to string using this method
+- **Widening conversion**: where precision/data is added (e.g., int → double)
+- **Narrowing conversion**: where precision/data is lost (e.g., double → int)
+- **Casting**: Use `(<datatype>)` prefix to cast, eg: `(float)value`, `(int)value`
+  - Truncates decimals when casting to int (rounds down)
+- **Parse**: `int.Parse(string)` converts string to number types
+- **Casting vs Convert**:
+  - Casting with `(int)` truncates decimal values (1.5 → 1)
+  - `Convert.ToInt32()` rounds to nearest integer (1.5 → 2)
+- **TryParse for safe conversion**: Use `int.TryParse(string, out int result)` when string might not be valid format
+  - Returns `bool` (true if successful, false if invalid)
+  - Stores converted value in `out` parameter
+  - Best practice for user input validation to avoid exceptions
