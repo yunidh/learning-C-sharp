@@ -132,7 +132,9 @@ variable = expression/valueToEvaluate switch
 - **Casting vs Convert**:
   - Casting with `(int)` truncates decimal values (1.5 → 1)
   - `Convert.ToInt32()` rounds to nearest integer (1.5 → 2)
-- **TryParse for safe conversion**: Use `int.TryParse(string, out int result)` when string might not be valid format
+- **TryParse**: Use `<targetDatatype>.TryParse(string, out <targetDatatype> result)` when string might not be valid format
   - Returns `bool` (true if successful, false if invalid)
   - Stores converted value in `out` parameter
   - Best practice for user input validation to avoid exceptions
+
+### 13. Top Level Statements, and using Namespaces
