@@ -92,8 +92,9 @@
 
 - Iterate over array with `foreach(<datatype> variableForCurrentValue in iterable ){}`
 
-- **Properties of array:**
-  - array.Length (number of elements)
+- **Array Properties:**
+
+  - `<arrayName>`.Length (number of elements)
 
 ### 10. Switch-case
 
@@ -111,13 +112,34 @@ variable = expression/valueToEvaluate switch
 
 ### 11. System namespace
 
-- `Array.ForEach(array, methodToApply)`, eg: (array,Console.WriteLine) will apply WriteLine to each element
-
-- `String.Split(character)`, splits string at character and returns array
-
-- `String.IsNullOrEmpty(string)`, returns bool true or false
-
 - `new Random()` creates the random generator object, `Random.Next()` method returns random int
+- `new string() / string varName = new(char[])`
+
+- **Array Methods:**
+
+  - `Array.Sort(arrayName)`, by default in alphabetical
+
+  - `Array.Clear(arrayName, starting index, length to clear)`,null for reference types, 0 for integers, false for booleans
+
+  - `Array.Resize(ref arrayName, new size)`, array must be passed with `ref` keyword
+
+  - `Array.ForEach(array, methodToApply)`, eg: (array,Console.WriteLine) will apply WriteLine to each element
+
+- **String Methods:**
+
+  - `<stringName>.Split(<delimiter>)`, splits string at specified delimiter and returns array
+
+  - `<stringName>.ToCharArray() (start index, stop index)` , converts string into a char array, index optional
+
+  - `String.IsNullOrEmpty(string)`, returns bool true or false
+
+  - _How to reverse an array out-of-place?_
+
+    `<reversedArray> = <array>.Reverse().ToArray();`
+
+    `<array>.Reverse()`<- in-place version
+
+  - `<string> = string.Join("<delimiter>", <array>)`, joins an array to a string with specified delimiter between elements
 
 ### 12. Converting datatypes
 
