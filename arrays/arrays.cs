@@ -47,7 +47,7 @@ foreach (string ID in IDs)
 Console.WriteLine("Reversing strings");
 string random = "abc123";
 char[] randomArray = random.ToCharArray();
-char[] reversedRandomArray = randomArray.Reverse().ToArray();
+char[] reversedRandomArray = [.. randomArray.Reverse()];
 
 var result = new string(reversedRandomArray);
 

@@ -1,7 +1,5 @@
 # learning-C-sharp
 
-linux test
-
 ## Setting up C# locally:
 
 - Download and Install .NET 10, (check with dotnet --version in command line)
@@ -135,13 +133,16 @@ variable = expression/valueToEvaluate switch
 
   - `String.IsNullOrEmpty(string)`, returns bool true or false
 
-  - _How to reverse an array out-of-place?_
+  - _How to reverse an array?_
 
-    `<reversedArray> = <array>.Reverse().ToArray();`
+    `<reversedArray> = <array>.Reverse().ToArray();` it needs explicit cast to convert object
 
-    `<array>.Reverse()`<- in-place version
+  - `Array.Reverse(<array>)` <- inplace
 
   - `<string> = string.Join("<delimiter>", <array>)`, joins an array to a string with specified delimiter between elements
+
+  - _To convert char[] to string_
+    - `string <variable> = new string(char[])`
 
 ### 12. Converting datatypes
 
@@ -162,3 +163,5 @@ variable = expression/valueToEvaluate switch
   - Best practice for user input validation to avoid exceptions
 
 ### 13. Top Level Statements, and using Namespaces
+
+-
