@@ -1,5 +1,7 @@
 # learning-C-sharp
 
+linux test
+
 ## Setting up C# locally:
 
 - Download and Install .NET 10, (check with dotnet --version in command line)
