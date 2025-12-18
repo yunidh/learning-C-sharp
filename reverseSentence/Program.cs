@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-string pangram = "The quick brown fox jumps over the lazy dog";
+﻿string pangram = "The quick brown fox jumps over the lazy dog";
 
 string[] words = pangram.Split(' ');
 string[] reversedWords = new string[words.Length];
